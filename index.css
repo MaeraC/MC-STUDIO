@@ -1,0 +1,1219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  img {
+    object-fit: cover;
+  }
+  section {
+    height: 100vh;
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h1, h2, h3, h4 {
+    text-transform: uppercase;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  ul, li {
+    list-style: none;
+  }
+
+  .titles {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .titles h1 {
+    text-transform: uppercase;
+  }
+  .titles h2 {
+    color: #757575;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .titles span {
+    width: 40px;
+    height: 5px;
+    background-color: #FB542C;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    .titles h1 {
+      font-size: 25px;
+    }
+    .titles h2 {
+      font-size: 18px;
+    }
+  }
+  
+  .button {
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 1px #FB542C;
+    transition: 0.8s;
+  }
+  .button:hover {
+    color: #FB542C;
+  }
+  .box-shadow {
+    box-shadow: 8px 8px 20px #b9b9b9;
+  }
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  /* LANDING PAGE ************************************************************************
+  ********************************************************************************/
+  .landing-page {
+    background: url(./assets/lp.jpg) no-repeat fixed;
+    background-size: cover;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .landing-page .text {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .landing-page .text .title {
+    font-size: 90px;
+    animation: fadeIn 1s ease-in;
+    text-transform: initial;
+  }
+  .landing-page .text .title2 {
+    font-size: 31px;
+    margin: 20px 0;
+    color: #FB542C;
+    animation: fadeIn 1s ease-in;
+    text-transform: initial;
+    font-weight: normal;
+  }
+  .landing-page .text .title3 {
+    margin-top: 10px;
+    font-size: 22px;
+    animation: fadeIn 1s ease-in;
+    text-transform: initial;
+    font-weight: normal;
+  }
+  .landing-page .button {
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.295);
+  }
+  @media screen and (max-width: 1024px) {
+    .landing-page .text .title {
+      font-size: 60px;
+    }
+    .landing-page .text .title2 {
+      font-size: 25px;
+    }
+    .landing-page .text .title3 {
+      font-size: 20px;
+    }
+    
+  }
+  @media screen and (max-width: 700px) {
+    .landing-page {
+      height: 50vh;
+      background: url(./assets/lp.jpg) no-repeat;
+    }
+    .landing-page .text .title {
+      font-size: 40px;
+      text-align: center;
+    }
+    .landing-page .text .title2 {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .landing-page .text .title3 {
+      font-size: 16px;
+      text-align: center;
+    }
+    .landing-page .button {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .landing-page {
+      height: 40vh;
+    }
+    .landing-page .text .title {
+      font-size: 30px;
+      text-align: center;
+    }
+    .landing-page .text .title2 {
+      font-size: 15px;
+      text-align: center;
+    }
+    .landing-page .text .title3 {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  
+  
+  .nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: #0000006b;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 99;
+  }
+  .nav ul {
+    display: flex;
+    align-items: center;
+  }
+  .nav ul .link {
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  .nav ul .link:hover {
+    color: #FB542C;
+    transition: 0.8s;
+  }
+  .nav ul .link::after, .nav ul .link::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    transition: width 0.5s; 
+  }
+  .nav ul .link::after {
+    right: 0;
+    background-color: #FB542C;
+  }
+  .nav ul .link::before {
+    left: 0;
+    background-color: #FB542C;
+  }
+  .nav ul .link:hover::after , .nav ul .link:hover::before {
+   width: 50%;
+  }
+  .nav .button {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .nav .menu2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    z-index: 99;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    height: 100vh;
+  }
+  .nav .menu2 a {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 10px;
+  }
+  .close-menu {
+    background-color: rgba(255, 255, 255, 0.589);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+  }
+  .open-burger {
+    background: none;
+  }
+  .logo {
+    cursor: pointer;
+  }
+  .logo h1 {
+    font-family: 'Raleway', sans-serif;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-size: 25px;
+  }
+  .logo .span3 {
+    -webkit-text-stroke: 1px #FB542C;
+    color: transparent;
+    text-transform: lowercase;
+    font-size: 33px;
+  }
+  .burger-btns {
+    display: flex;
+  }
+  @media screen and (max-width: 500px) {
+    .nav .button {
+      font-size: 12px;
+    }
+    .logo h1 {
+      font-size: 20px;
+    }
+    .logo .span3 {
+      font-size: 25px;
+    }
+    .button {
+      padding: 5px 10px;
+    }
+    .nav {
+      padding: 10px;
+    }
+  }
+  /* MES SERVICES  ************************************************************************
+  ********************************************************************************/
+  .services {
+    height: 100%;
+    padding: 0 8%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .services .titles {
+    margin-bottom: 30px;
+  }
+  .services .types {
+    display: flex;
+  }
+  .services .card {
+    width: 33%;
+    height: 400px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+  }
+  .services .card .face {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .services .card .face-text {
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    color: black;
+    border: #FB542C solid 2px;
+    line-height: 25px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+  }
+  .services .card .face-image {
+    transition: 0.6s;
+  }
+  .services .card h3 {
+    font-size: 25px;
+    transition: 0.5s;
+    color: white;
+    z-index: 10;
+  }
+  .services i {
+    margin-bottom: 20px;
+    border: #FB542C solid 2px;
+    padding: 12px;
+    font-size: 20px;
+    color: #FB542C;
+  }
+  .services .card:hover .face.face-image {
+    height: 60px;
+  }
+  .services .card:hover .face.face-image h3 {
+    font-size: 16px;
+  }
+  .design {
+    background: url(./assets/orange1.jpg);
+    background-size: cover;
+  }
+  .creation {
+    background: url(./assets/orange5.jpg);
+    background-size: cover;
+  }
+  .reference {
+    background: url(./assets/orange2.jpg) ;
+    background-size: cover;
+  }
+  .services .intro {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 5%;
+    margin-bottom: 20px;
+    color: grey;
+  }
+  @media screen and (max-width: 1320px) {
+    .services {
+      padding: 0 5%;
+      padding-top: 60px;
+    }
+    .services .card {
+      width: 33%;
+      height: 400px;
+      margin: 30px 20px;
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .services {
+      padding: 0 20px;
+      padding-top: 60px;
+    }
+    .services .card {
+      width: 33%;
+      height: 400px;
+      margin: 30px 20px;
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .services {
+      padding: 0 20px;
+      padding-top: 60px;
+    }
+    .services .card {
+      width: 33%;
+      height: 400px;
+      margin: 30px 10px;
+    }
+    .services .card .face-text {
+      padding: 20px;
+      line-height: 25px;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .services {
+      padding: 0 20px;
+      padding-top: 60px;
+      height: auto;
+    }
+    .services .card .face-text {
+      padding: 40px;
+      line-height: 25px;
+      font-size: 14px;
+    }
+    .services .types {
+      display: block;
+      padding: 0 50px;
+    }
+    .services .card {
+      width: 100%;
+      height: 300px;
+      margin: 20px 0;
+    }
+    .services .intro {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .services .card .face-text {
+      padding: 20px 40px;
+    }
+    .services .types {
+      padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .services .card {
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .services .card {
+      height: 350px;
+    }
+    .services .types {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .services .card {
+      height: 370px;
+    }
+    .services .types {
+      padding: 0;
+    }
+    .services .card .face-text {
+      line-height: 20px;
+    }
+  }
+  /* ADVANTAGES **************************************************************
+  ************************************************************************/
+  .advantages {
+    background: url(./assets/advantages.jpg) fixed no-repeat;
+    background-size: cover;
+    padding: 40px 5%;
+    height: 100%;
+    padding-top: 70px;
+  }
+  .advantages .titles h1 {
+    color: white;
+  }
+  .advantages .titles h2 {
+    color: #b9b9b9;
+  }
+  .advantages .types {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages .types div {
+    width: 22%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+  }
+  .advantages .types div h3 {
+    color: #FB542C;
+  }
+  .advantages .types div p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+  .appear {
+    opacity: 0;
+    position: relative;
+    top: 50px;
+    transition: opacity 1s;
+  }
+  @media screen and (max-width: 1160px) {
+    .advantages .types {
+      padding: 20px 0;
+    }
+    .advantages .types div {
+      width: 23%;
+    }
+    .advantages .types div p {
+      font-size: 14px;
+    }
+    .advantages {
+      padding: 40px 2%;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .advantages .types {
+      padding: 20px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .advantages .types div {
+      width: 40%;
+      margin: 20px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .advantages {
+      background: url(./assets/advantages.jpg);
+    }
+    .advantages .titles {
+      margin-bottom: 0;
+    }
+    .advantages .types {
+      flex-direction: column;
+    }
+    .advantages .types div {
+      width: auto;
+      height: 165px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .advantages .types div {
+      width: auto;
+      margin: 20px;
+      height: 200px;
+    }
+  }
+  /* PROCESS **************************************************************
+  ************************************************************************/
+  .process {
+    height: 100%;
+    padding: 0 8%;
+    padding-top: 60px;
+  }
+  .process ul li {
+    position: relative;
+    width: 5px;
+    margin: 0 auto;
+    background-color: #FB542C;
+    padding-bottom: 50px;
+    transition: background-color 1.5s;
+  }
+  .process ul li.show {
+    background-color: black;
+  }
+  .process ul li.show::after {
+    background-color: green;
+    content: "1";
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 7px 12px;
+    transition: all 0.5s;
+  }
+  .process ul li.show:nth-child(2)::after {
+    content: "2";
+  }
+  .process ul li.show:nth-child(3)::after {
+    content: "3";
+  }
+  .process ul li.show:nth-child(4)::after {
+    content: "4";
+  }
+  .process ul li.show:nth-child(5)::after {
+    content: "5";
+  }
+  .process ul li.show:nth-child(6)::after {
+    content: "6";
+  }
+  .process ul li::after {
+    position: absolute;
+    content: "";
+    padding: 12px 12px;
+    background-color: #FB542C;
+    border: #FB542C solid 4px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 2px;
+    top: 50px;
+  }
+  .process ul li div {
+    position: relative;
+    width: 550px;
+    border-radius: 5px;
+    bottom: 0;
+    border: solid 1px #b9b9b96d;
+  }
+  .process ul li div span {
+    background-color: #FB542C;
+    height: 3px;
+    width: 50px;
+    display: flex;
+    margin-left: 20px;
+  }
+  @keyframes scrollGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  .process ul li:nth-child(odd) div {
+    left: 45px;
+  }
+  .process li:nth-child(even) div {
+    left: -595px;
+  }
+  .process h3 {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+  .process p {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 20px;
+    padding-top: 10px;
+  }
+  .process li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  .process ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+  }
+  .process ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+  }
+  .process ul li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  @media screen and (max-width: 1300px) {
+    .process ul li div {
+      width: 450px;
+    }
+    .process li:nth-child(even) div {
+      left: -495px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .process ul li div {
+      width: 350px;
+    }
+    .process li:nth-child(even) div {
+      left: -395px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .process ul li {
+      margin: initial;
+    }
+    .process li:nth-child(even) div {
+      left: 45px;
+    }
+    .process ul li div {
+      width: 600px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .process ul li div {
+      width: 500px;
+    }
+  }
+  @media screen and (max-width: 630px) {
+    .process ul li div {
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .process ul li div {
+      width: 350px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .process ul li div {
+      width: 300px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .process ul li div {
+      width: 270px;
+    }
+  }
+  /* DEVIS **************************************************************
+  ************************************************************************/
+  .devis {
+    background: url(./assets/advantages.jpg) fixed;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 0;
+  }
+  .devis div {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.536);
+    padding: 40px 0;
+  }
+  .devis p {
+    margin-bottom: 30px;
+  }
+  .devis .button {
+    background: #0000006a;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 850px) {
+    .devis {
+      font-size: 16px;
+      background: url(./assets/advantages.jpg);
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .devis div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .devis p {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .devis p {
+      width: 100%;
+      line-height: 28px;
+    }
+  }
+  /* PRESENTATION **************************************************************
+  ************************************************************************/
+  .presentation {
+    height: 100%;
+    padding: 60px 12%;
+    background-color: #80808018;
+  }
+  .presentation .img {
+    width: 20%;
+    height: 250px;
+    margin-top: 20px;
+    background: #FB542C;
+    position: relative;
+  }
+  .presentation img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    border: solid 1px grey;
+  }
+  .presentation .text {
+    width: 78%;
+  }
+  .presentation p {
+    font-size: 15px;
+    line-height: 23px;
+    padding: 10px;
+  }
+  .presentation .text2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 900px) {
+    .presentation .img {
+      width: 30%;
+      height: 250px;
+      margin-right: 20px;
+    }
+    .presentation {
+      padding: 60px 5%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .presentation .img {
+      width: 70%;
+      height: 280px;
+      margin-right: 0;
+    }
+    .presentation {
+      padding: 60px 20px;
+    }
+    .presentation .text2 {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .presentation .text {
+      width: 100%;
+    }
+    .presentation .titles {
+      margin-bottom: 20px;
+    }
+  }
+  /* PORTFOLIO **************************************************************
+  ************************************************************************/
+  .portfolio {
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery figure {
+    position: relative;
+    margin: 20px;
+    width: 25%;
+    height: 250px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease;
+    border: solid 1px #b9b9b96d;
+  }
+  .gallery figure::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 93%;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    background-color: #0000007a;
+    opacity: 0; /* Ajout de l'opacité pour afficher l'élément */
+    transition: opacity 0.5s ease;
+  }
+  .gallery figure:hover::after {
+    opacity: 1;
+  }
+  .gallery figure:nth-child(1):hover::after {
+    content: "Site de gestion et construction immobilière";
+  }
+  .gallery figure:nth-child(4):hover::after {
+    content: "Site vitrine d'un studio de photographie";
+  }
+  .gallery figure:nth-child(5):hover::after {
+    content: "Plateforme de location d'appartements entre particuliers";
+  }
+  .gallery figure:nth-child(6):hover::after {
+    content: "Plateforme de réservation de restaurants avec composiion de son menu en ligne";
+  }
+  .gallery figure:nth-child(3):hover::after {
+    content: "Boutique en ligne de vente de plantes d'intérieur";
+  }
+  .gallery figure:nth-child(2):hover::after {
+    content: "Site vitrine de restaurant.";
+  }
+  .figure.visible {
+    opacity: 1;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+  .gallery figure.fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  @media screen and (max-width: 900px) {
+    .gallery figure {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .gallery figure {
+      width: 100%;
+    }
+    .portfolio {
+      padding: 30px 20px;
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+    .portfolio .titles {
+      margin-bottom: 20px;
+    }
+  }
+  /* DEVIS FORM  **************************************************************
+  ************************************************************************/
+  .devis-modal {
+    height: 70vh;
+    overflow: initial;
+    background-color: rgb(25, 25, 25);
+    padding-top: 40px;
+  }
+  .devis-modal h1 {
+    color: white;
+  }
+  .devis-modal form {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+  }
+  .devis-modal form div {
+    background: white;
+  } 
+
+
+  /* CSS pour masquer toutes les étapes sauf la première */
+.form-devis .input-section:not(:first-child) {
+  display: none;
+}
+
+/* Ajouter un style pour le bouton Suivant */
+.next-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Style supplémentaire pour le bouton Suivant de la dernière étape */
+.end-container .next-btn {
+  background-color: green;
+}
+
+/* Style supplémentaire pour le bouton Confirmer */
+.politic-container .next-btn {
+  background-color: #4CAF50;
+}
+
+/* Style pour les étapes pliées */
+.input-section.folded {
+  display: none;
+}
+
+  /*
+  .devis-modal .input-section {
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0px 0px 100px #00000033;
+    transition: all 0.2s ease-in;
+  } 
+  .devis-modal .input-section.folded {
+    width: 50%;
+    z-index: 1;
+  } 
+  .devis-modal .input-section.folded + .folded {
+    width: 90%;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+  } 
+  .devis-modal .input-section.folded + .folded input {
+    background-color: rgb(225, 188, 239);
+  }
+  .devis-modal .input-section.folded + .folded span {
+    background-color: rgb(225, 188, 239);
+  }
+  .devis-modal .input-section.fold-up { 
+    margin-top: -75px;
+  }
+  .devis-modal form input {
+    width: 100%;
+    padding: 20px 40px;
+    border: 0;
+    border-bottom: #80808048 solid 1px;
+    margin: 0;
+    outline: none;
+  }
+  .devis-modal .type-site-container p , .devis-modal .project-container p {
+    padding: 20px 40px;
+    padding-bottom: 0;
+  }
+  .devis-modal .type-site-container ul, .devis-modal .project-container ul {
+    padding: 20px 40px;
+  }
+  .devis-modal .type-site-container input , .devis-modal .project-container input {
+    width: initial;
+  }
+  .devis-modal .type-site-container .other-radio, .devis-modal .project-container .other-radio {
+    padding: 0;
+    margin-left: 10px;
+    border: solid 1px #80808048;
+    padding: 5px;
+    width: 100%;
+  }
+  .type-site-container ul li , .project-container ul li {
+    display: flex;
+    margin: 10px;
+    margin-left: 0;
+  }
+  .type-site-container label , .project-container label {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .budget-container div , .details-container div , .politic-container div {
+    padding: 20px 40px;
+  }
+  .budget-container select, .details-container textarea {
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+  }
+  .details-container textarea {
+    margin-bottom: 0;
+    height: 100px;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    border: solid 1px #8080808b;
+  }
+  .devis-modal .politic-container input {
+    width: initial;
+    margin-right: 10px;
+  }
+  .politic-container div {
+    line-height: 25px;
+    font-size: 15px;
+  }
+  .end-container {
+    padding: 40px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .devis-modal .next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: #FB542C;
+  }
+  .devis-modal .next {
+    margin-top: -75px;
+  }
+  .devis-modal .success {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 75px;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+    background: limegreen;
+    margin-top: -75px;
+  }
+  .devis-modal .success p {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  form input {
+    font-family: 'Raleway', sans-serif;
+  }
+  form .error {
+    font-size: 13px;
+    color: red;
+    margin-left: 30px;
+  }
+  form a {
+    color: #FB542C;
+  } */
+  @media screen and (max-width: 800px) {
+    .devis-modal .input-section ,  .devis-modal .input-section.folded {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .devis-modal .input-section ,  .devis-modal .input-section.folded {
+      width: 90%;
+    }
+  } */
+  /* FOOTER **************************************************************
+  ************************************************************************/
+  .mentions , .politique {
+    padding: 60px 20%;
+    line-height: 25px;
+    height: 100%;
+  }
+  .mentions h1 , .politique h1 {
+    margin: 20px 0;
+    color: #FB542C;
+    font-size: 25px;
+  }
+  .mentions h2 , .politique h2 {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  .mentions p , .politique p , .politique li {
+    font-size: 15px;
+  }
+  /* FOOTER **************************************************************
+  ************************************************************************/
+  footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    line-height: 25px;
+    font-size: 14px;
+    align-items: center;
+  }
+  footer i {
+    margin-right: 10px;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer a:hover {
+    color: #FB542C;
+    transition: 0.3s;
+  }
+  @media screen and (max-width: 800px) {
+    footer {
+      flex-direction: column;
+      line-height: 25px;
+    }
+    footer ul {
+      margin:  20px 0;
+    }
+  }
+  
+  
+  
+  
+  .error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB542C;
+  }
+  .error span {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+  .error p {
+    font-size: 18px;
+  }
+  .error a {
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .error a:hover {
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 600px) {
+    .error span {
+      font-size: 80px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .error span {
+      font-size: 60px;
+    }
+    .error p {
+      font-size: 16px;
+    }
+  }

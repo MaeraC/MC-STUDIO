@@ -1,0 +1,38 @@
+[
+  {
+    "image": "assets/projects-img/tayta.png",
+    "link": "https://tayta.netlify.app/",
+    "description": "Site de gestion et construction immobilière.",
+    "title": "TAYTA"
+   },
+   {
+    "image": "assets/projects-img/delice-des-sens.png",
+    "link": "https://le-delice-des-sens.netlify.app/",
+    "description": "Site vitrine de restaurant.",
+    "title": "Le Délice des sens"
+   },
+   {
+    "image": "assets/projects-img/nature.png",
+    "link": "https://naturemoi.netlify.app/",
+    "description": "Boutique en ligne - Vente de plantes.",
+    "title": "NaturEmoi"
+   },
+   {
+    "image": "assets/projects-img/lp-studio.png",
+    "link": "https://lp-photographie.netlify.app/",
+    "description": "Portfolio de photographe.",
+    "title": "LP Studio"
+   },
+   {
+    "image": "assets/projects-img/kasa.png",
+    "link": "https://kasaa-app.netlify.app/",
+    "description": "Plateforme de location d’appartements entre particuliers.",
+    "title": "Kasa"
+   }, 
+   {
+    "image": "assets/projects-img/omfood.png",
+    "link": "https://oohmyfoood.netlify.app/",
+    "description": "Site de réservation de restaurant avec composition de son menu en ligne."  ,
+    "title": "Ohmyfood" 
+    }
+]
