@@ -385,8 +385,7 @@
   }
   .services .intro {
     text-align: center;
-    font-size: 14px;
-    line-height: 20px;
+    line-height: 23px;
     margin: 0 5%;
     margin-bottom: 20px;
     color: grey;
@@ -516,7 +515,7 @@
   }
   .advantages .types div p {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 25px;
     margin-top: 20px;
   }
   .appear {
@@ -571,6 +570,53 @@
       margin: 20px;
       height: 200px;
     }
+  }
+  /* GARANTIES **************************************************************
+  ************************************************************************/
+  .garanties {
+    height: 100%;
+    padding: 60px 8%;
+  }
+  .garanties ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .garanties ul li {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+  }
+  .garanties ul li .text {
+    width: 60%;
+    line-height: 28px;
+  }
+  .garanties ul li .img {
+    width:  30%;
+    height: 80%;
+  }
+  .garanties ul li .img2{
+    width:  30%;
+    height: 70%;
+  }
+  .garanties ul li .img3{
+    width:  25%;
+    height: 80%;
+  }
+  .garanties ul li .img4 {
+    width:  35%;
+    height: 80%;
+  }
+  .garanties img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .garanties h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
   }
   /* PROCESS **************************************************************
   ************************************************************************/
