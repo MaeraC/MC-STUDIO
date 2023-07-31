@@ -50,9 +50,9 @@ window.addEventListener("DOMContentLoaded", function() {
 
     function closeMenuBurger() {
         if (isMenuOpen) {
-            const menuBurger = menu.querySelector(".menu2"); // Sélectionner le menu burger existant
+            const menuBurger = menu.querySelector(".menu2")
             if (menuBurger) {
-                menuBurger.remove(); // Supprimer le menu burger
+                menuBurger.remove()
             }
             menuList.style.display = "flex"; // Afficher le menu complet
             isMenuOpen = false; // Mettre à jour l'état du menu (fermé)

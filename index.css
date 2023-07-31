@@ -189,6 +189,8 @@
   .nav ul {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 60%;
   }
   .nav ul .link {
     margin: 0 20px;
@@ -270,6 +272,16 @@
   }
   .burger-btns {
     display: flex;
+  }
+  @media screen and (max-width: 1195px) {
+    .nav ul {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 1155px) {
+    .nav ul {
+      width: 68%;
+    }
   }
   @media screen and (max-width: 500px) {
     .nav .button {
@@ -747,6 +759,7 @@
   }
   .devis p {
     margin-bottom: 30px;
+    line-height: 20px;
   }
   .devis .button {
     background: #0000006a;
@@ -867,7 +880,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 93%;
+    width: 95%;
     padding: 10px;
     color: white;
     font-size: 14px;
@@ -927,82 +940,29 @@
   /* DEVIS FORM  **************************************************************
   ************************************************************************/
   .devis-modal {
-    height: 70vh;
+    height: 100%;
     overflow: initial;
     background-color: rgb(25, 25, 25);
     padding-top: 40px;
+    padding-bottom: 40px;
   }
   .devis-modal h1 {
     color: white;
+  }
+  .devis-modal form div {
+    background: white;
   }
   .devis-modal form {
     display: flex;
     justify-content: center;
     margin: 40px;
   }
-  .devis-modal form div {
-    background: white;
-  } 
-
-
-  /* CSS pour masquer toutes les étapes sauf la première */
-.form-devis .input-section:not(:first-child) {
-  display: none;
-}
-
-/* Ajouter un style pour le bouton Suivant */
-.next-btn {
-  cursor: pointer;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-}
-
-/* Style supplémentaire pour le bouton Suivant de la dernière étape */
-.end-container .next-btn {
-  background-color: green;
-}
-
-/* Style supplémentaire pour le bouton Confirmer */
-.politic-container .next-btn {
-  background-color: #4CAF50;
-}
-
-/* Style pour les étapes pliées */
-.input-section.folded {
-  display: none;
-}
-
-  /*
+  .form-devis .input-section:not(:first-child) {
+    display: none;
+  }
   .devis-modal .input-section {
     width: 50%;
-    position: absolute;
-    overflow: hidden;
-    z-index: 2;
-    box-shadow: 0px 0px 100px #00000033;
-    transition: all 0.2s ease-in;
   } 
-  .devis-modal .input-section.folded {
-    width: 50%;
-    z-index: 1;
-  } 
-  .devis-modal .input-section.folded + .folded {
-    width: 90%;
-    margin-top: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    z-index: 0;
-  } 
-  .devis-modal .input-section.folded + .folded input {
-    background-color: rgb(225, 188, 239);
-  }
-  .devis-modal .input-section.folded + .folded span {
-    background-color: rgb(225, 188, 239);
-  }
-  .devis-modal .input-section.fold-up { 
-    margin-top: -75px;
-  }
   .devis-modal form input {
     width: 100%;
     padding: 20px 40px;
@@ -1010,7 +970,7 @@
     border-bottom: #80808048 solid 1px;
     margin: 0;
     outline: none;
-  }
+  } 
   .devis-modal .type-site-container p , .devis-modal .project-container p {
     padding: 20px 40px;
     padding-bottom: 0;
@@ -1020,6 +980,7 @@
   }
   .devis-modal .type-site-container input , .devis-modal .project-container input {
     width: initial;
+    cursor: pointer;
   }
   .devis-modal .type-site-container .other-radio, .devis-modal .project-container .other-radio {
     padding: 0;
@@ -1078,44 +1039,24 @@
     font-weight: bold;
     background-color: #FB542C;
   }
-  .devis-modal .next {
-    margin-top: -75px;
-  }
-  .devis-modal .success {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 75px;
-    border-radius: 0 0 15px 15px;
-    overflow: hidden;
-    z-index: 2;
-    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease-in;
-    background: limegreen;
-    margin-top: -75px;
-  }
-  .devis-modal .success p {
-    color: white;
-    font-weight: 900;
-    letter-spacing: 2px;
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
+  .devis-modal .next-btn:hover {
+    color: black;
+    transition: 0.5s;
   }
   form input {
     font-family: 'Raleway', sans-serif;
   }
-  form .error {
+  .error-msg {
     font-size: 13px;
-    color: red;
-    margin-left: 30px;
+    color: #FB542C;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px;
+    text-align: center;
   }
   form a {
     color: #FB542C;
-  } */
+  } 
   @media screen and (max-width: 800px) {
     .devis-modal .input-section ,  .devis-modal .input-section.folded {
       width: 80%;
@@ -1125,10 +1066,12 @@
     .devis-modal .input-section ,  .devis-modal .input-section.folded {
       width: 90%;
     }
-  } */
-  /* FOOTER **************************************************************
+  } 
+  /* MENTIONS + POLITIQUE **************************************************************
   ************************************************************************/
   .mentions , .politique {
+    height: 100%;
+    overflow: initial;
     padding: 60px 20%;
     line-height: 25px;
     height: 100%;
@@ -1166,6 +1109,12 @@
   footer a:hover {
     color: #FB542C;
     transition: 0.3s;
+  }
+  footer .rdv {
+    border: 1px solid #FB542C;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
   }
   @media screen and (max-width: 800px) {
     footer {
