@@ -5,6 +5,7 @@
   }
   body {
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
   }
   
   img {
@@ -408,7 +409,7 @@
     }
     .services .card {
       width: 33%;
-      height: 400px;
+      height: 420px;
       margin: 30px 20px;
     }
   }
@@ -516,13 +517,20 @@
   .advantages .types div p {
     font-size: 15px;
     line-height: 25px;
-    margin-top: 20px;
+    padding: 10px;
+    padding-top: 20px;
   }
   .appear {
     opacity: 0;
     position: relative;
     top: 50px;
     transition: opacity 1s;
+  }
+  .advantages img {
+    border: 1px solid black ;
+    padding: 7px;
+    width: 45px;
+    margin-bottom: 20px;
   }
   @media screen and (max-width: 1160px) {
     .advantages .types {
@@ -617,6 +625,37 @@
   .garanties h3 {
     margin-bottom: 20px;
     font-size: 20px;
+  }
+  @media screen and (max-width: 1200px) {
+    .garanties ul li {
+      margin-bottom: 30px;
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .garanties ul li {
+      margin-bottom: 50px;
+      width: 95%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .garanties ul li {
+      margin-bottom: 30px;
+      flex-direction: column;
+      width: 100%;
+    }
+    .garanties ul li .text {
+      width: 100%;
+    }
+    .garanties ul li .img {
+      width: 90%;
+      height: 250px;
+      margin-top: 20px;
+    }
+    .garanties .img-2 {
+      flex-direction: column-reverse;
+    }
+    
   }
   /* PROCESS **************************************************************
   ************************************************************************/
@@ -1156,12 +1195,17 @@
     color: #FB542C;
     transition: 0.3s;
   }
-  footer .rdv {
+  footer .contact li {
+    margin-bottom: 10px;
+  }
+  footer .contact .rdv {
     border: 1px solid #FB542C;
     text-align: center;
     padding: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
+
+
   @media screen and (max-width: 800px) {
     footer {
       flex-direction: column;
