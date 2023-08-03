@@ -540,7 +540,7 @@
       width: 23%;
     }
     .advantages .types div p {
-      font-size: 14px;
+      font-size: 15px;
     }
     .advantages {
       padding: 40px 2%;
@@ -569,14 +569,14 @@
     }
     .advantages .types div {
       width: auto;
-      height: 165px;
+      height: 220px;
     }
   }
   @media screen and (max-width: 500px) {
     .advantages .types div {
       width: auto;
       margin: 20px;
-      height: 200px;
+      height: 240px;
     }
   }
   /* GARANTIES **************************************************************
