@@ -327,6 +327,7 @@
     color: white;
     overflow: hidden;
     text-align: center;
+    cursor: pointer;
   }
   .services .card .face {
     position: absolute;
@@ -390,6 +391,9 @@
     margin: 0 5%;
     margin-bottom: 20px;
     color: grey;
+  }
+  .services .intro span {
+    font-weight: bold;
   }
   @media screen and (max-width: 1320px) {
     .services {
@@ -603,19 +607,16 @@
   }
   .garanties ul li .img {
     width:  30%;
-    height: 80%;
+    height: 200px;
   }
   .garanties ul li .img2{
     width:  30%;
-    height: 70%;
   }
   .garanties ul li .img3{
     width:  25%;
-    height: 80%;
   }
   .garanties ul li .img4 {
     width:  35%;
-    height: 80%;
   }
   .garanties img {
     width: 100%;
@@ -1255,4 +1256,8 @@
     .error p {
       font-size: 16px;
     }
+  }
+
+  .email-btn {
+    color: #FB542C;
   }
