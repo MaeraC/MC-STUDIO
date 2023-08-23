@@ -362,7 +362,7 @@
     color: black;
     border: #FB542C solid 2px;
     line-height: 25px;
-    font-size: 14px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     justify-content: initial;
@@ -418,7 +418,7 @@
     }
     .services .card {
       width: 33%;
-      height: 400px;
+      height: 440px;
       margin: 30px 20px;
     }
   }
@@ -429,7 +429,7 @@
     }
     .services .card {
       width: 33%;
-      height: 420px;
+      height: 460px;
       margin: 30px 20px;
     }
   }
@@ -440,13 +440,13 @@
     }
     .services .card {
       width: 33%;
-      height: 400px;
+      height: 440px;
       margin: 30px 10px;
     }
     .services .card .face-text {
       padding: 20px;
       line-height: 25px;
-      font-size: 14px;
+      font-size: 15px;
     }
   }
   @media screen and (max-width: 900px) {
@@ -458,7 +458,7 @@
     .services .card .face-text {
       padding: 40px;
       line-height: 25px;
-      font-size: 14px;
+      font-size: 15px;
     }
     .services .types {
       display: block;
@@ -466,7 +466,7 @@
     }
     .services .card {
       width: 100%;
-      height: 300px;
+      height: 310px;
       margin: 20px 0;
     }
     .services .intro {
@@ -485,10 +485,16 @@
     .services .card {
       height: 350px;
     }
+    .services {
+      padding: 30px 20px;
+    }
+    .services .titles {
+      margin-bottom: 0;
+    }
   }
   @media screen and (max-width: 500px) {
     .services .card {
-      height: 350px;
+      height: 370px;
     }
     .services .types {
       padding: 0;
@@ -496,7 +502,7 @@
   }
   @media screen and (max-width: 400px) {
     .services .card {
-      height: 370px;
+      height: 390px;
     }
     .services .types {
       padding: 0;
@@ -582,7 +588,7 @@
       background: url(./assets/advantages.jpg);
     }
     .advantages .titles {
-      margin-bottom: 0;
+      padding-bottom: 0;
     }
     .advantages .types {
       flex-direction: column;
@@ -591,12 +597,15 @@
       width: auto;
       height: 220px;
     }
+    .advantages .titles h1 {
+      margin-bottom: 10px;
+    }
   }
   @media screen and (max-width: 500px) {
     .advantages .types div {
       width: auto;
       margin: 20px;
-      height: 240px;
+      height: 250px;
     }
   }
   /* GARANTIES **************************************************************
@@ -671,6 +680,9 @@
     }
     .garanties .img-2 {
       flex-direction: column-reverse;
+    }
+    .garanties {
+      padding: 30px;
     }
     
   }
@@ -807,38 +819,71 @@
   }
   @media screen and (max-width: 850px) {
     .process ul li {
-      margin: initial;
+      margin-left: 30px;
     }
     .process li:nth-child(even) div {
       left: 45px;
     }
     .process ul li div {
-      width: 600px;
+      width: 700px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .process ul li div {
+      width: 650px;
     }
   }
   @media screen and (max-width: 750px) {
     .process ul li div {
-      width: 500px;
+      width: 600px;
     }
   }
-  @media screen and (max-width: 630px) {
+  @media screen and (max-width: 700px) {
     .process ul li div {
-      width: 400px;
+      width: 550px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    .process ul li div {
+      width: 500px;
+    }
+    .process .titles {
+      padding-top: 30px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .process ul li div {
+      width: 480px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .process ul li div {
+      width: 420px;
     }
   }
   @media screen and (max-width: 500px) {
     .process ul li div {
-      width: 350px;
+      width: 370px;
     }
   }
   @media screen and (max-width: 450px) {
     .process ul li div {
+      width: 330px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .process ul li div {
       width: 300px;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 380px) {
     .process ul li div {
-      width: 270px;
+      width: 280px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .process ul li div {
+      width: 240px;
     }
   }
   /* DEVIS **************************************************************
@@ -1042,11 +1087,10 @@
     }
     .portfolio {
       padding: 30px 20px;
-      padding-top: 60px;
       padding-bottom: 30px;
     }
     .portfolio .titles {
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
   }
   /* DEVIS FORM  **************************************************************
@@ -1082,6 +1126,7 @@
     border-bottom: #80808048 solid 1px;
     margin: 0;
     outline: none;
+    font-size: 15px;
   } 
   .devis-modal .type-site-container p , .devis-modal .project-container p {
     padding: 20px 40px;
@@ -1176,7 +1221,17 @@
   }
   @media screen and (max-width: 500px) {
     .devis-modal .input-section ,  .devis-modal .input-section.folded {
-      width: 90%;
+      width: 100%;
+      font-size: 15px;
+    }
+    .devis-modal .input-section::placeholder , .devis-modal .input-section.folded::placeholder {
+      font-size: 15px;
+    }
+    .devis-modal form input {
+      
+    }
+    .devis-modal form {
+      margin: 30px;
     }
   } 
   /* MENTIONS + POLITIQUE **************************************************************
