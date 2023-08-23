@@ -1,15 +1,27 @@
 [
   {
-    "image": "assets/projects-img/tayta.png",
-    "link": "https://tayta.netlify.app/",
-    "description": "Site de gestion et construction immobilière.",
-    "title": "TAYTA"
+    "image": "assets/projects-img/labelleassiette.png",
+    "link": "https://labelleassiette.netlify.app/",
+    "description": "Site de restaurant et boutique en ligne",
+    "title": "La Belle Assiette"
+   },
+   {
+    "image": "assets/projects-img/sapori.png",
+    "link": "https://saporiditalia.netlify.app/",
+    "description": "Site vitrine d'un restaurant italien",
+    "title": "Sapori d'Italia"
    },
    {
     "image": "assets/projects-img/delice-des-sens.png",
     "link": "https://le-delice-des-sens.netlify.app/",
     "description": "Site vitrine de restaurant.",
     "title": "Le Délice des sens"
+   },
+  {
+    "image": "assets/projects-img/ilios.png",
+    "link": "https://iliosgroupe.com/",
+    "description": "Site d'immobilier de luxe au Sénégal",
+    "title": "Ilios Groupe"
    },
    {
     "image": "assets/projects-img/nature.png",
@@ -26,7 +38,7 @@
    {
     "image": "assets/projects-img/kasa.png",
     "link": "https://kasaa-app.netlify.app/",
-    "description": "Plateforme de location d’appartements entre particuliers.",
+    "description": ".Plateforme de location d’appartements entre particuliers",
     "title": "Kasa"
    }, 
    {

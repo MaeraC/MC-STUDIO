@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   .titles h1 {
     text-transform: uppercase;
@@ -191,7 +191,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
   }
   .nav ul .link {
     margin: 0 20px;
@@ -244,7 +244,7 @@
     margin: 10px;
   }
   .close-menu {
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: #ffffff96;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -274,14 +274,29 @@
   .burger-btns {
     display: flex;
   }
-  @media screen and (max-width: 1195px) {
-    .nav ul {
-      width: 70%;
+  @media screen and (max-width: 1170px) {
+    .logo h1 {
+      font-size: 22px;
     }
-  }
-  @media screen and (max-width: 1155px) {
+    .logo .span3 {
+      -webkit-text-stroke: 1px #FB542C;
+      color: transparent;
+      text-transform: lowercase;
+      font-size: 30px;
+      margin-right: 10px;
+    }
+    .nav .button {
+      margin-left: 10px;
+      padding: 10px;
+    }
     .nav ul {
-      width: 68%;
+      width: 73%;
+    }
+    .nav ul .link {
+      margin: 0;
+    }
+    .nav {
+      padding: 10px;
     }
   }
   @media screen and (max-width: 500px) {
@@ -662,7 +677,10 @@
   ************************************************************************/
   .process {
     height: 100%;
-    padding: 0 8%;
+    background: url(assets/processus.png);
+  }
+  .process .titles {
+    background: white;
     padding-top: 60px;
   }
   .process ul li {
@@ -718,6 +736,7 @@
     border-radius: 5px;
     bottom: 0;
     border: solid 1px #b9b9b96d;
+    background-color: white;
   }
   .process ul li div span {
     background-color: #FB542C;
@@ -954,7 +973,7 @@
   .gallery figure {
     position: relative;
     margin: 20px;
-    width: 25%;
+    width: 20%;
     height: 250px;
     cursor: pointer;
     opacity: 0;
@@ -978,22 +997,28 @@
     opacity: 1;
   }
   .gallery figure:nth-child(1):hover::after {
-    content: "Site de gestion et construction immobilière";
-  }
-  .gallery figure:nth-child(4):hover::after {
-    content: "Site vitrine d'un studio de photographie";
-  }
-  .gallery figure:nth-child(5):hover::after {
-    content: "Plateforme de location d'appartements entre particuliers";
-  }
-  .gallery figure:nth-child(6):hover::after {
-    content: "Plateforme de réservation de restaurants avec composiion de son menu en ligne";
-  }
-  .gallery figure:nth-child(3):hover::after {
-    content: "Boutique en ligne de vente de plantes d'intérieur";
+    content: "Site de restaurant et boutique en ligne";
   }
   .gallery figure:nth-child(2):hover::after {
-    content: "Site vitrine de restaurant.";
+    content: "Site vitrine d'un restaurant italien";
+  }
+  .gallery figure:nth-child(3):hover::after {
+    content: "Site vitrine de restaurant";
+  }
+  .gallery figure:nth-child(4):hover::after {
+    content: "Site d'immobilier de luxe au Sénégal";
+  }
+  .gallery figure:nth-child(5):hover::after {
+    content: "Boutique en ligne de vente de plantes d'intérieur";
+  }
+  .gallery figure:nth-child(6):hover::after {
+    content: "Portfolio d'un studio de photographie";
+  }
+  .gallery figure:nth-child(7):hover::after {
+    content: "Plateforme de location d’appartements entre particuliers";
+  }
+  .gallery figure:nth-child(8):hover::after {
+    content: "Site de réservation de restaurant avec composition de son menu en ligne.";
   }
   .figure.visible {
     opacity: 1;

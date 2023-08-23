@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
     function checkWindowSize() {
-        if (window.innerWidth <= 1080) {
+        if (window.innerWidth <= 1130) {
             menuList.style.display = "none";
             menuBtn.style.display = "flex";
         } else {
