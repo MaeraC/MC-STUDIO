@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", function() {
             if (menuBurger) {
                 menuBurger.remove()
             }
-            menuList.style.display = "flex"; // Afficher le menu complet
+            //menuList.style.display = "flex"; // Afficher le menu complet
             isMenuOpen = false; // Mettre à jour l'état du menu (fermé)
         }
     }
@@ -66,7 +66,7 @@ window.addEventListener("DOMContentLoaded", function() {
         } else {
             closeMenuBurger();
             menuBtn.style.display = "none";
-            menuList.style.display = "flex";
+            //menuList.style.display = "flex";
         }
     }
 

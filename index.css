@@ -226,7 +226,7 @@
     margin-left: 20px;
   }
   .nav .menu2 {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: black;
@@ -235,13 +235,17 @@
     padding: 20px;
     width: 50%;
     height: 100vh;
+    justify-content: initial;
+  }
+  .nav .menu2 li {
+    margin: 20px;
   }
   .nav .menu2 a {
     font-size: 18px;
     text-align: center;
     width: 100%;
     display: inline-block;
-    margin: 10px;
+    margin: 0;
   }
   .close-menu {
     background-color: #ffffff96;
@@ -291,9 +295,6 @@
     }
     .nav ul {
       width: 73%;
-    }
-    .nav ul .link {
-      margin: 0;
     }
     .nav {
       padding: 10px;
