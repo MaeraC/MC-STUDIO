@@ -494,7 +494,7 @@
   }
   @media screen and (max-width: 500px) {
     .services .card {
-      height: 370px;
+      height: 390px;
     }
     .services .types {
       padding: 0;
@@ -502,7 +502,7 @@
   }
   @media screen and (max-width: 400px) {
     .services .card {
-      height: 390px;
+      height: 410px;
     }
     .services .types {
       padding: 0;
@@ -928,6 +928,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 40px 20px;
     }
     .devis p {
       width: 80%;
@@ -1227,9 +1228,7 @@
     .devis-modal .input-section::placeholder , .devis-modal .input-section.folded::placeholder {
       font-size: 15px;
     }
-    .devis-modal form input {
-      
-    }
+    
     .devis-modal form {
       margin: 30px;
     }
@@ -1341,4 +1340,8 @@
 
   .email-btn {
     color: #FB542C;
+  }
+
+  h2 {
+    line-height: 28px;
   }
