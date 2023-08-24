@@ -1,4 +1,4 @@
-* {
+* , *::after , *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -1042,18 +1042,20 @@
     transition: opacity 1s ease;
     border: solid 1px #b9b9b96d;
   }
+ 
   .gallery figure::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 95%;
+    width: 100%;
     padding: 10px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     background-color: #0000007a;
-    opacity: 0; /* Ajout de l'opacité pour afficher l'élément */
+    opacity: 0; 
     transition: opacity 0.5s ease;
+    z-index: 5;
   }
   .gallery figure:hover::after {
     opacity: 1;
