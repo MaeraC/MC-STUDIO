@@ -83,7 +83,7 @@
   /* LANDING PAGE ************************************************************************
   ********************************************************************************/
   .landing-page {
-    background: url(./assets/lp.jpg) no-repeat fixed;
+    background: url(./assets/lp.webp) no-repeat fixed;
     background-size: cover;
     padding: 0;
     height: 100vh;
@@ -138,7 +138,7 @@
   @media screen and (max-width: 700px) {
     .landing-page {
       height: 50vh;
-      background: url(./assets/lp.jpg) no-repeat;
+      background: url(./assets/lp.webp) no-repeat;
     }
     .landing-page .text .title {
       font-size: 40px;
@@ -390,15 +390,15 @@
     font-size: 16px;
   }
   .design {
-    background: url(./assets/orange1.jpg);
+    background: url(./assets/orange1.webp);
     background-size: cover;
   }
   .creation {
-    background: url(./assets/orange5.jpg);
+    background: url(./assets/orange5.webp);
     background-size: cover;
   }
   .reference {
-    background: url(./assets/orange2.jpg) ;
+    background: url(./assets/orange2.webp) ;
     background-size: cover;
   }
   .services .intro {
@@ -529,7 +529,7 @@
   /* ADVANTAGES **************************************************************
   ************************************************************************/
   .advantages {
-    background: url(./assets/advantages.jpg) fixed no-repeat;
+    background: url(./assets/advantages.webp) fixed no-repeat;
     background-size: cover;
     padding: 40px 5%;
     height: 100%;
@@ -600,7 +600,7 @@
   }
   @media screen and (max-width: 700px) {
     .advantages {
-      background: url(./assets/advantages.jpg);
+      background: url(./assets/advantages.webp);
     }
     .advantages .titles {
       padding-bottom: 0;
@@ -705,7 +705,7 @@
   ************************************************************************/
   .process {
     height: 100%;
-    background: url(assets/processus.png);
+    background: url(assets/processus.webp);
   }
   .process .titles {
     background: white;
@@ -904,7 +904,7 @@
   /* DEVIS **************************************************************
   ************************************************************************/
   .devis {
-    background: url(./assets/advantages.jpg) fixed;
+    background: url(./assets/advantages.webp) fixed;
     background-size: cover;
     color: white;
     height: 100%;
@@ -935,7 +935,7 @@
   @media screen and (max-width: 850px) {
     .devis {
       font-size: 16px;
-      background: url(./assets/advantages.jpg);
+      background: url(./assets/advantages.webp);
     }
   }
   @media screen and (max-width: 700px) {

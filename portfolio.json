@@ -1,48 +1,48 @@
 [
   {
-    "image": "assets/projects-img/labelleassiette.png",
+    "image": "assets/projects-img/labelleassiette.webp",
     "link": "https://labelleassiette.netlify.app/",
     "description": "Site de restaurant et boutique en ligne",
     "title": "La Belle Assiette"
    },
    {
-    "image": "assets/projects-img/sapori.png",
+    "image": "assets/projects-img/sapori.webp",
     "link": "https://saporiditalia.netlify.app/",
     "description": "Site vitrine d'un restaurant italien",
     "title": "Sapori d'Italia"
    },
    {
-    "image": "assets/projects-img/delice-des-sens.png",
+    "image": "assets/projects-img/delice-des-sens.webp",
     "link": "https://le-delice-des-sens.netlify.app/",
     "description": "Site vitrine de restaurant.",
     "title": "Le Délice des sens"
    },
   {
-    "image": "assets/projects-img/ilios.png",
+    "image": "assets/projects-img/ilios.webp",
     "link": "https://iliosgroupe.com/",
     "description": "Site d'immobilier de luxe au Sénégal",
     "title": "Ilios Groupe"
    },
    {
-    "image": "assets/projects-img/nature.png",
+    "image": "assets/projects-img/nature.webp",
     "link": "https://naturemoi.netlify.app/",
     "description": "Boutique en ligne - Vente de plantes.",
     "title": "NaturEmoi"
    },
    {
-    "image": "assets/projects-img/lp-studio.png",
+    "image": "assets/projects-img/lp-studio.webp",
     "link": "https://lp-photographie.netlify.app/",
     "description": "Portfolio de photographe.",
     "title": "LP Studio"
    },
    {
-    "image": "assets/projects-img/kasa.png",
+    "image": "assets/projects-img/kasa.webp",
     "link": "https://kasaa-app.netlify.app/",
     "description": ".Plateforme de location d’appartements entre particuliers",
     "title": "Kasa"
    }, 
    {
-    "image": "assets/projects-img/omfood.png",
+    "image": "assets/projects-img/omfood.webp",
     "link": "https://oohmyfoood.netlify.app/",
     "description": "Site de réservation de restaurant avec composition de son menu en ligne."  ,
     "title": "Ohmyfood" 
