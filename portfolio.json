@@ -1,9 +1,21 @@
 [
   {
+    "image": "assets/projects-img/ilios.webp",
+    "link": "https://iliosgroupe.com/",
+    "description": "Site d'immobilier de luxe au Sénégal",
+    "title": "Ilios Groupe"
+   },
+  {
     "image": "assets/projects-img/labelleassiette.webp",
     "link": "https://labelleassiette.netlify.app/",
     "description": "Site de restaurant et boutique en ligne",
     "title": "La Belle Assiette"
+   },
+   {
+    "image": "assets/projects-img/delice-des-sens.webp",
+    "link": "https://le-delice-des-sens.netlify.app/",
+    "description": "Site vitrine de restaurant.",
+    "title": "Le Délice des sens"
    },
    {
     "image": "assets/projects-img/sapori.webp",
@@ -12,16 +24,10 @@
     "title": "Sapori d'Italia"
    },
    {
-    "image": "assets/projects-img/delice-des-sens.webp",
-    "link": "https://le-delice-des-sens.netlify.app/",
-    "description": "Site vitrine de restaurant.",
-    "title": "Le Délice des sens"
-   },
-  {
-    "image": "assets/projects-img/ilios.webp",
-    "link": "https://iliosgroupe.com/",
-    "description": "Site d'immobilier de luxe au Sénégal",
-    "title": "Ilios Groupe"
+    "image": "assets/projects-img/lp-studio.webp",
+    "link": "https://lp-photographie.netlify.app/",
+    "description": "Portfolio de photographe.",
+    "title": "LP Studio"
    },
    {
     "image": "assets/projects-img/nature.webp",
@@ -29,12 +35,7 @@
     "description": "Boutique en ligne - Vente de plantes.",
     "title": "NaturEmoi"
    },
-   {
-    "image": "assets/projects-img/lp-studio.webp",
-    "link": "https://lp-photographie.netlify.app/",
-    "description": "Portfolio de photographe.",
-    "title": "LP Studio"
-   },
+   
    {
     "image": "assets/projects-img/kasa.webp",
     "link": "https://kasaa-app.netlify.app/",
