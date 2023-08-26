@@ -376,12 +376,13 @@
     color: white;
     z-index: 10;
   }
-  .services i {
+  .services img {
     margin-bottom: 20px;
     border: #FB542C solid 2px;
-    padding: 12px;
-    font-size: 20px;
-    color: #FB542C;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    
   }
   .services .card:hover .face.face-image {
     height: 60px;
