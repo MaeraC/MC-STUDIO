@@ -1061,22 +1061,25 @@
     opacity: 1;
   }
   .gallery figure:nth-child(1):hover::after {
-    content: "Site de restaurant et boutique en ligne";
+    content: "Site d'immobilier de luxe au Sénégal";
   }
   .gallery figure:nth-child(2):hover::after {
-    content: "Site vitrine d'un restaurant italien";
+    content: "Site de restaurant et boutique en ligne";
+    
   }
   .gallery figure:nth-child(3):hover::after {
     content: "Site vitrine de restaurant";
   }
   .gallery figure:nth-child(4):hover::after {
-    content: "Site d'immobilier de luxe au Sénégal";
+    content: "Site vitrine d'un restaurant italien";
+   
   }
   .gallery figure:nth-child(5):hover::after {
-    content: "Boutique en ligne de vente de plantes d'intérieur";
+    content: "Portfolio d'un studio de photographie";
+    
   }
   .gallery figure:nth-child(6):hover::after {
-    content: "Portfolio d'un studio de photographie";
+    content: "Boutique en ligne de vente de plantes d'intérieur";
   }
   .gallery figure:nth-child(7):hover::after {
     content: "Plateforme de location d’appartements entre particuliers";
