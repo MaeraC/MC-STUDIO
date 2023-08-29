@@ -126,7 +126,7 @@ const sendDataToEmail = () => {
 
     const templateParams = {
         from_name: nameInput.value,
-        message : nameInput.value + " souhaite un devis pour son nouveau projet pour son entreprise : " + entrepriseInput.value + ". \n"
+        message : nameInput.value + " souhaite un devis pour son entreprise : " + entrepriseInput.value + ". \n"
         + "Email : " + emailInput.value + "\n" 
         + "Téléphone : " + telInput.value + "\n"
         + "Type de site : " + selectedTypeSite + "\n"
@@ -155,5 +155,35 @@ document.querySelector(".project-container .next-btn").addEventListener("click",
 document.querySelector(".budget-container .next-btn").addEventListener("click", handleBudgetNext)
 document.querySelector(".details-container .next-btn").addEventListener("click", handleDetailsNext)
 document.querySelector(".politic-container .next-btn").addEventListener("click", handlePoliticNext)
+
+document.querySelector(".email-container .previous").addEventListener("click", () => {
+    document.querySelector(".name-container").style.display = "block"
+    document.querySelector(".email-container").style.display = "none"
+})
+
+document.querySelector(".type-site-container .previous").addEventListener("click", () => {
+    document.querySelector(".email-container").style.display = "block"
+    document.querySelector(".type-site-container").style.display = "none"
+})
+
+document.querySelector(".project-container .previous").addEventListener("click", () => {
+    document.querySelector(".type-site-container").style.display = "block"
+    document.querySelector(".project-container").style.display = "none"
+})
+
+document.querySelector(".budget-container .previous").addEventListener("click", () => {
+    document.querySelector(".project-container").style.display = "block"
+    document.querySelector(".budget-container").style.display = "none"
+})
+
+document.querySelector(".details-container .previous").addEventListener("click", () => {
+    document.querySelector(".budget-container").style.display = "block"
+    document.querySelector(".details-container").style.display = "none"
+})
+
+document.querySelector(".politic-container .previous").addEventListener("click", () => {
+    document.querySelector(".details-container").style.display = "block"
+    document.querySelector(".politic-container").style.display = "none"
+})
 
 

@@ -925,7 +925,7 @@
   }
   .devis p {
     margin-bottom: 30px;
-    line-height: 20px;
+    line-height: 30px;
   }
   .devis .button {
     background: #0000006a;
@@ -1136,6 +1136,7 @@
   }
   .devis-modal .input-section {
     width: 50%;
+    position: relative;
   } 
   .devis-modal form input {
     width: 100%;
@@ -1232,6 +1233,17 @@
   form a {
     color: #FB542C;
   } 
+  .previous {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    cursor: pointer;
+    width: 35px;
+    transition: 0.3s;
+  }
+  .previous:hover {
+    transform: scale(1.1);
+  }
   @media screen and (max-width: 800px) {
     .devis-modal .input-section ,  .devis-modal .input-section.folded {
       width: 80%;
