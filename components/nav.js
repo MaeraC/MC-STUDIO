@@ -16,12 +16,12 @@ window.addEventListener("DOMContentLoaded", function() {
         const burgerItem6 = document.createElement("li")
         const closeBtn = document.createElement("i")
 
-        burgerItem1.innerHTML = "<a href='#services'>Services</a>"
-        burgerItem2.innerHTML = "<a href='#avantages'>Avantages</a>"
-        burgerItem3.innerHTML = "<a href='#deroulement'>Déroulement</a>"
-        burgerItem4.innerHTML = "<a href='#realisations'>Réalisations</a>"
-        burgerItem5.innerHTML = "<a href='#contact'>Contact</a>"
-        burgerItem6.innerHTML = "<a href='pages/a-propos.html'>À propos</a>"
+        burgerItem1.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#services'>Nos services</a>"
+        burgerItem2.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#avantages'>Nos atouts</a>"
+        burgerItem2.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#garanties'>Nos garanties</a>"
+        burgerItem3.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#deroulement'>Déroulement</a>"
+        burgerItem4.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#realisations'>Nos réalisations</a>"
+        burgerItem5.innerHTML = "<a href='https://mc-studio-dev.fr/pages/about.html'>À propos</a>"
 
         menuBurger.classList.add("menu2")
         closeBtn.classList.add("fas", "fa-times", "close-menu")
