@@ -12,6 +12,12 @@
     "title": "La Belle Assiette"
    },
    {
+    "image": "assets/projects-img/auberge.png",
+    "link": "https://laubergeblanche.netlify.app/",
+    "description": "Site vitrine de restaurant",
+    "title": "L'Auberge Blanche"
+   },
+   {
     "image": "assets/projects-img/delice-des-sens.webp",
     "link": "https://le-delice-des-sens.netlify.app/",
     "description": "Site vitrine de restaurant.",

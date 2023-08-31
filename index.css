@@ -1065,27 +1065,26 @@
   }
   .gallery figure:nth-child(2):hover::after {
     content: "Site de restaurant et boutique en ligne";
-    
   }
   .gallery figure:nth-child(3):hover::after {
     content: "Site vitrine de restaurant";
   }
   .gallery figure:nth-child(4):hover::after {
+    content: "Site vitrine de restaurant";
+  }
+  .gallery figure:nth-child(5):hover::after {
     content: "Site vitrine d'un restaurant italien";
    
   }
-  .gallery figure:nth-child(5):hover::after {
+  .gallery figure:nth-child(6):hover::after {
     content: "Portfolio d'un studio de photographie";
     
   }
-  .gallery figure:nth-child(6):hover::after {
+  .gallery figure:nth-child(7):hover::after {
     content: "Boutique en ligne de vente de plantes d'intérieur";
   }
-  .gallery figure:nth-child(7):hover::after {
-    content: "Plateforme de location d’appartements entre particuliers";
-  }
   .gallery figure:nth-child(8):hover::after {
-    content: "Site de réservation de restaurant avec composition de son menu en ligne.";
+    content: "Plateforme de location d’appartements entre particuliers";
   }
   .figure.visible {
     opacity: 1;
