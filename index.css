@@ -1376,3 +1376,98 @@
   h2 {
     line-height: 28px;
   }
+
+
+.about {
+  margin: 0;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.title-about {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-about img {
+  width: 70%;
+}
+.about .titles {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+.about span {
+  color: black;
+}
+.about p {
+  width: 40%;
+  line-height: 22px;
+  color: grey;
+  font-size: 15px;
+}
+.about ul {
+  width: 25%;
+  background: #FB542C;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  text-align: left;
+}
+.about ul li {
+  width: 100%;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+}
+.about .bold  {
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  font-size: initial;
+}
+.about .button {
+  border: 1px solid white;
+  font-size: 13px;
+  color: black;
+  background: white;
+  width: 100%;
+}
+.about .button:hover {
+  color: #FB542C;
+}
+.about .marg {
+  padding-bottom: 20px;
+}
+@media (max-width: 1060px) {
+  .about {
+    flex-direction: column;
+  }
+  .about p , .about ul , .title-about {
+    width: 70%;
+  }
+  .about img {
+    display: none;
+  }
+  .about ul {
+    margin-top: 30px;
+    width: 40%;
+  }
+  .about p {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .about img {
+    display: block;
+  }
+  .about ul , .about p {
+    width: 80%;
+  }
+}
