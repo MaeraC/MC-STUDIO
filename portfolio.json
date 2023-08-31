@@ -47,11 +47,5 @@
     "link": "https://kasaa-app.netlify.app/",
     "description": ".Plateforme de location d’appartements entre particuliers",
     "title": "Kasa"
-   }, 
-   {
-    "image": "assets/projects-img/omfood.webp",
-    "link": "https://oohmyfoood.netlify.app/",
-    "description": "Site de réservation de restaurant avec composition de son menu en ligne."  ,
-    "title": "Ohmyfood" 
-    }
+   }
 ]
