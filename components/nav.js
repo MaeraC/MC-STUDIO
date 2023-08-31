@@ -16,11 +16,11 @@ window.addEventListener("DOMContentLoaded", function() {
         const burgerItem6 = document.createElement("li")
         const closeBtn = document.createElement("i")
 
-        burgerItem1.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#services'>Nos services</a>"
-        burgerItem2.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#avantages'>Nos atouts</a>"
-        burgerItem2.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#garanties'>Nos garanties</a>"
+        burgerItem1.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#services'>Mes services</a>"
+        burgerItem2.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#avantages'>Mes atouts</a>"
+        burgerItem2.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#garanties'>Mes garanties</a>"
         burgerItem3.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#deroulement'>Déroulement</a>"
-        burgerItem4.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#realisations'>Nos réalisations</a>"
+        burgerItem4.innerHTML = "<a href='https://mc-studio-dev.fr/index.html/#realisations'>Mes réalisations</a>"
         burgerItem5.innerHTML = "<a href='https://mc-studio-dev.fr/pages/about.html'>À propos</a>"
 
         menuBurger.classList.add("menu2")
