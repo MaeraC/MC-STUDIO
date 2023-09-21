@@ -88,6 +88,7 @@
     padding: 0;
     height: 100vh;
     overflow: hidden;
+    position: relative;
   }
   .landing-page .text {
     color: white;
@@ -317,6 +318,32 @@
       padding: 10px;
     }
   }
+  nav img {
+    width: 120px;
+  }
+  .landing-page img {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    animation: rebond infinite 2s ease;
+  }
+  @keyframes rebond {
+    0% {
+      bottom: 30px;
+    }
+    50% {
+      bottom: 20px;
+    }
+    90% {
+      bottom: 20px;
+    }
+    100% {
+      bottom: 30px;
+    }
+  }
+
   /* MES SERVICES  ************************************************************************
   ********************************************************************************/
   .services {
