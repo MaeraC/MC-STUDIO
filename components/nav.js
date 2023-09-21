@@ -68,6 +68,13 @@ window.addEventListener("DOMContentLoaded", function() {
             menuBtn.style.display = "none";
             //menuList.style.display = "flex";
         }
+        if (window.innerWidth <= 700) {
+           const fleches = document.querySelector(".landing-page img")
+           fleches.style.display = "none"
+        } else {
+            const fleches = document.querySelector(".landing-page img")
+           fleches.style.display = "block"
+        }
     }
 
     // Vérifier la largeur de la fenêtre lors du chargement initial
